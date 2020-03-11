@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leaflet UTM Demo</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet-src.js"></script>
+    <script src="script.js"></script>
+    <style type="text/css">
+  
+    </style>
+</head>
+
+<body>
+   
+    <div id="map" class="crosshairs"></div>
+
+    <div id="center">
+
+ 
+
+    <script type="text/javascript">
+    var item = L.utm({x: 467486.3, y: 4101149.3, zone: 30, band: 'S'});
+    var coord = item.latLng();
+    console.log(coord);
+    </script>
+</body>
+</html>
